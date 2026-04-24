@@ -1,0 +1,44 @@
+.content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+p {
+    max-width: 80%;
+    margin: 0 auto;
+}
+.header {
+    font-size: 3em;
+    color: #333;
+    text-align: center;
+}
+.subheader {
+    font-size: 1.0em;
+    color: #4682ec;
+    text-align: center;
+}
+hr {
+    height: 1px;
+    background-color: #333;
+    margin: 20px auto;
+    width: 80%;
+}
+.italics {
+    font-style: italic;
+    margin-top: 20px;
+}
+.list {
+    list-style-type: ordered;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 70%;
+}
+.list-item {
+    margin: 10px 0;
+}
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 20%;
+}
