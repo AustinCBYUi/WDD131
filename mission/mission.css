@@ -1,5 +1,7 @@
+body {
+    background-color: white;
+}
 .content {
-    background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
     margin: 0 auto;
@@ -41,4 +43,12 @@ img {
     display: block;
     margin: 20px auto;
     max-width: 20%;
+}
+
+.dark {
+    background-color: rgb(18, 18, 18);
+    color: white;
+}
+.dark .header {
+    color: white;
 }
