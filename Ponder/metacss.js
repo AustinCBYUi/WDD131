@@ -13,7 +13,7 @@ const one = 1;
 const two = "2";
 
 let result = one * two;
-console.log(resule);
+console.log(result);
 
 result = one + Number(two);
 console.log(result);
