@@ -36,11 +36,22 @@ nav {
     display: none;
 }
 
+nav.show {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
 nav a {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
     margin: 0 .75rem;
     font-size: .9rem;
+}
+
+.hide {
+    display: none;
 }
 
 main {
@@ -69,6 +80,36 @@ h2 {
     box-shadow: 3px 3px 8px #555;
 }
 
+figure img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 5px 5px 15px black;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+dialog img {
+    width: 90%;
+    display: block;
+    margin: 20vh auto;
+}
+dialog {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.75);
+}
+.close-viewer {
+    position: absolute;
+    top: 10vh;
+    right: 2vh;
+    padding: 3px 6px;
+    font-size: 1.5em;
+}
+
 footer {
     background-color: #2f7ed8;
     color: white;
@@ -82,6 +123,17 @@ footer {
         grid-template-columns: 1fr 1fr;
         max-width: 500px;
         margin: 0 auto;
+    }
+    .menu-btn {
+        display: none;
+    }
+    nav a {
+        display: inline;
+    }
+    nav {
+        display: block;
+        text-align: center;
+        margin-top: 0.5rem;
     }
 }
 
@@ -98,5 +150,20 @@ footer {
     .gallery {
         grid-template-columns: 1fr 1fr 1fr;
         max-width: 700px;
+    }
+    dialog img{
+        width: 60%;
+        margin: 15vh auto;
+    }
+    .close-viewer {
+        position: absolute;
+        right: 15vh;
+    }
+    .viewer {
+        margin: 50px;
+        padding: 50px;
+    }
+    .viewer img {
+        width: 100%;
     }
 }
