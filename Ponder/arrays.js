@@ -91,9 +91,11 @@ students.forEach(function(item){
     let name = document.createElement('div');
     name.className = 'format';
 
+
     let html = `
     <span>${item.first}</span>
     <span>${item.last}</span>
+    <hr>
     `
     name.innerHTML = html;
     container.appendChild(name);
