@@ -4,9 +4,13 @@
 
 body {
     margin: 0;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #000;
     background-color: white;
+}
+
+.date {
+    font-style: italic;
 }
 
 .page {
@@ -78,7 +82,7 @@ main {
 .book-review img {
     width: 140px;
     display: block;
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem auto;
 }
 
 .book-review p {
