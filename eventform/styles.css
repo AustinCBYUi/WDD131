@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    background-color: #fff;
+}
+
+.page {
+    width: 760px;
+    max-width: 100%;
+    margin: 1rem auto;
+    padding: 34px;
+    background-color: #bfd0da;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 9px;
+    padding: 24px 22px 34px;
+}
+
+h1 {
+    margin: 0 0 22px;
+    font-size: 2rem;
+}
+
+form {
+    width: 100%;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.field {
+    margin-bottom: 12px;
+}
+
+.full {
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 0.85rem;
+}
+
+input,
+select {
+    width: 100%;
+    height: 41px;
+    padding: 7px 9px;
+    border: 1px solid #777;
+    font-size: 1rem;
+    background-color: #fff;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #1f73ff;
+    outline-offset: -2px;
+}
+
+button {
+    width: 100%;
+    height: 42px;
+    margin-top: 4px;
+    border: 2px solid #222;
+    background-color: #bfd0da;
+    color: #000;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #adc4d0;
+}
+
+.hidden {
+    display: none;
+}
+
+#messages {
+    margin-top: 16px;
+}
+
+.error {
+    margin: 0;
+    padding: 10px 0;
+    color: #000;
+    font-weight: bold;
+}
+
+#ticketOutput {
+    margin-top: 24px;
+}
+
+#ticketOutput h2 {
+    margin: 0 0 18px;
+    font-size: 1.35rem;
+}
+
+#ticketOutput p {
+    margin: 0 0 12px;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+    .page {
+        padding: 22px;
+    }
+
+    .row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
