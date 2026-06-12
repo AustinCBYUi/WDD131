@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A character card website and game">
+    <meta name="author" content="Austin Campbell">
+    <title>Character Card</title>
+
+    <!-- Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Snortleblat Character Card">
+    <meta property="og:description" content="A JavaScript object character card project.">
+    <meta property="og:url" content="https://example.com/charactercard">
+    <meta property="og:image" content="https://example.com/images/snortleblat.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Snortleblat Character Card">
+    <meta name="twitter:description" content="A JavaScript object character card project.">
+    <meta name="twitter:image" content="https://example.com/images/snortleblat.png">
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="card">
+        <img id="characterImage" src="images/snortleblat.png" alt="Snortleblat swamp beast">
+
+        <section class="name-bar">
+            <h1 id="name"></h1>
+        </section>
+
+        <section class="info">
+            <p><strong>Class:</strong> <span id="className"></span></p>
+            <p><strong>Level:</strong> <span id="level"></span></p>
+            <p><strong>Health:</strong> <span id="health"></span></p>
+
+            <p id="message"></p>
+
+            <div class="buttons">
+                <button id="attackBtn">Attacked</button>
+                <button id="levelBtn">Level Up</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
